@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Myriad-Pro;
+  src: url(../fonts/Myriad\ Pro\ Regular.ttf);
+}
+@font-face {
+  font-family: PlayfairDisplay-Bold;
+  src: url(../fonts/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+  font-family: Sintony-Regular;
+  src: url(../fonts/Sintony-Regular.ttf);
+}
+.bg_image {
+  background: url(../images/main_image.jpg);
+  height: 750px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.315);
+  background-blend-mode: multiply;
+}
+nav {
+  align-items: center;
+  display: flex;
+  width: 62%;
+  margin: auto;
+  padding: 40px 0px;
+  justify-content: space-between;
+}
+.logo {
+  width: 160px;
+}
+.logo img {
+  max-width: 100%;
+}
+#menu {
+  display: flex;
+  list-style: none;
+}
+#menu > li {
+  padding: 10px;
+}
+#menu > li > a {
+  display: block;
+  text-decoration: none;
+  font-family: "Myriad-Pro";
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px 6px;
+  transition: color 0.5s ease;
+}
+/* unvisited link */
+#menu > li > a:link {
+  color: #ffffff;
+}
+
+/* visited link */
+#menu > li > a:visited {
+  color: #ffffff;
+}
+
+/* mouse over link */
+#menu > li > a:hover {
+  color: chartreuse;
+  transition: color 0.5s ease;
+}
+
+/* selected link */
+#menu > li > a:active {
+  color: #0000ff;
+}
+.bg_image .label {
+  margin: 140px 30px 90px 30px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "PlayfairDisplay-Bold";
+}
+.bg_image .number {
+  text-align: center;
+  color: #fea100;
+  font-family: "Sintony-Regular";
+}
+.label h1 {
+  text-transform: capitalize;
+  font-size: 63px;
+}
+.label h3 {
+  font-size: 38px;
+}
+.bg_image .number .nu {
+  color: #ffffff;
+  font-size: 32px;
+}
+.number span:first-child {
+  font-size: 35px;
+}
+.number p {
+  margin: 10px 0px;
+  text-transform: uppercase;
+}
+.Today_Special {
+  width: 62%;
+  margin: auto;
+}
+.Today_Special {
+  text-align: center;
+}
+.pizzas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pizzas .pizza {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 13px 12px 23px 10px rgb(0 0 0 / 20%);
+}
+.pizzas .pizza .img {
+  overflow: hidden;
+}
+.pizzas .pizza .img img {
+  max-width: 100%;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+.pizza .img img:hover {
+  transform: scale(1.2);
+  transition: all 0.6s ease;
+}
+.Today_Special .heading {
+  margin: 97px 0px 31px 0px;
+  font-size: 35px;
+  font-family: "PlayfairDisplay-Bold";
+}
+.pizza .name_price {
+  padding: 30px 10px 48px 30px;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.name_price .name {
+  margin-bottom: 10px;
+  font-family: "PlayfairDisplay-Bold";
+}
+.name_price .price {
+  color: #fea100;
+  font-weight: bold;
+  display: flex;
+}
+.price span {
+  font-size: 13px;
+  padding-top: 1px;
+}
+table th,
+tr,
+td {
+  border: 1px solid #fff;
+  border-right: 0px;
+  border-left: 0px;
+  text-align: center;
+  padding: 15px 0px;
+  color: #fea100;
+  font-family: sans-serif;
+}
+table th {
+  color: #fff;
+  font-family: "Myriad-Pro";
+  font-size: 21px;
+  text-align: left;
+  padding-left: 5%;
+}
+table {
+  /* border-radius: 5px; */
+  border-collapse: collapse;
+  width: 62%;
+  border: 2px solid #fff;
+}
+
+/*border-radius does not work because of border-collapse:collapse*/
+
+.prices_table {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+  background: linear-gradient(#373844, #141418);
+  padding: 60px 0px;
+}
+table td span {
+  position: relative;
+  top: -4px;
+  font-size: 12px;
+}
+table tr:first-child td {
+  font-size: 15px;
+}
+table tr:first-child td:last-child {
+  font-size: 20px;
+}
+.prices_table .title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Myriad-Pro";
+  font-size: 30px;
+}
+.video_container {
+  text-align: center;
+  margin-bottom: 70px;
+}
+video {
+  width: 62%;
+  height: auto;
+}
+.video_container .vid_title {
+  margin: 60px 20px;
+  font-family: "Sintony-Regular";
+  font-size: 30px;
+}
+footer {
+  background-color: #373844;
+  padding: 35px 0px;
+  font-family: "Sintony-Regular";
+}
+.footer_text {
+  width: 62%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.copy {
+  color: #868990;
+  text-transform: uppercase;
+}
+.copy span {
+  color: #fff;
+}
+form input {
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 5px;
+  border: 2px solid #52535e;
+  margin-right: 15px;
+  width: 280px;
+  background: transparent;
+}
+input[type="email"]::placeholder {
+  color: #fea100;
+  font-size: 17px;
+}
+form {
+  display: flex;
+}
+form button {
+  color: #fff;
+  outline: none;
+  background: #fea100;
+  border: 0;
+  border-radius: 4px;
+  padding: 11px;
+  cursor: pointer;
+  animation: scale 4s linear infinite alternate;
+  /*animation-name,animation-duration,animation-timing-function,
+ animation-delay,animation-iteration-count, animation-direction,
+ animation-fill-mode, and animation-play-state. */
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/**responsive**/
+
+@media screen and (max-width: 1320px) {
+  .pizza .name_price {
+    align-items: center;
+    padding: 30px 10px;
+  }
+}
+@media screen and (max-width: 1271px) {
+  nav,
+  .Today_Special,
+  table,
+  video,
+  .footer_text {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 882px) {
+  .footer_text {
+    flex-direction: column;
+  }
+  .copy {
+    margin-bottom: 20px;
+  }
+  .pizzas .pizza {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .bg_image {
+    height: auto;
+  }
+  .bg_image .label {
+    margin: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  #menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, black, transparent);
+  }
+  table th,
+  tr,
+  td {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
+  .copy {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 428px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form button {
+    margin-top: 20px;
+  }
+  .pizzas .pizza {
+    width: 100%;
+    box-shadow: 0px 0px 23px 14px rgb(0 0 0 / 20%);
+  }
+  table th {
+    font-size: 4vw;
+  }
+  table tr:first-child td {
+    font-size: 3vw;
+  }
+}
